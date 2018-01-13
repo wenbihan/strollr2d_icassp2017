@@ -4,8 +4,9 @@ function [pos_arr, error_arr, numPatch_arr] = ...
 %   Detailed explanation goes here
 % Goal: perform block matching (BM)
 % Inputs:
-%   1. image            : [aa0, bb0] size image
-%   2. BMparam          : parameters for BM
+%   1. extractPatch         : extracted patches for BM
+%   2. BMparam              : parameters for BM
+%       - aa, bb            : image size
 %       - dim               : patch width
 %       - n                 : n patch spatial dimension (vectorized)
 %       - stride            : patch extraction stride

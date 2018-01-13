@@ -3,7 +3,7 @@ Image Denoising Codes using STROLLR learning, the Matlab implementation of the p
 
 STROLLR2D image denoising accompanies the following publication: 
 
-"When Sparsity Meets Low-Rankness: Transform Learning With Non-Local Low-Rank Constraint for Image Restoration", IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2017. [ICASSP 2017](http://ieeexplore.ieee.org/abstract/document/7952566/), [PDF available](http://transformlearning.csl.illinois.edu/assets/Bihan/ConferencePapers/BihanICASSP2017strollr.pdf), [Code](https://github.com/wenbihan/strollr2d_icassp2017)
+"When Sparsity Meets Low-Rankness: Transform Learning With Non-Local Low-Rank Constraint for Image Restoration", IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2017. [[ICASSP 2017](http://ieeexplore.ieee.org/abstract/document/7952566/)], [[PDF available](http://transformlearning.csl.illinois.edu/assets/Bihan/ConferencePapers/BihanICASSP2017strollr.pdf)], [[Code](https://github.com/wenbihan/strollr2d_icassp2017)]
 
 
 Description:

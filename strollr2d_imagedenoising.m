@@ -25,25 +25,19 @@ function [Xr, psnrXr] = strollr2d_imagedenoising(data, param)
 %       2. param: Structure that contains the parameters of the
 %       OCTOBOS_imagedenoising algorithm. The various fields are as follows
 %       -
-%                   - numBlock: Number of blocks of the learned OCTOBOS
-%                   (Example: 4)
-%                   - sig: Standard deviation of the additive Gaussian
-%                   noise (Example: 20)
-%                   - n: Patch size as (Example: 64)
+%                   - dim: Patch size
 %                   - stride: stride of overlapping patches
-%                   - isKmeansInitialization: Set to 1 if the clustering is
-%                   initialized using K-means. Set to 0 if the clustering
-%                   is initialized by random partition.
+%                   - BMstride: stride of patches for block matching
+%                   - TLthr0: sparsity penalty coefficient
+%                   - learningIter: number of iterations of transform
+%                           learning
+%                   - searchWindowSize: size of the local search window
+%                   - tensorSize: tensor (matrix) size for low-rank approximation
+%                   - thr0: rank penalty term coefficient
 %
 % Outputs -
 %       1. Xr - Image reconstructed with OCTOBOS_imagedenoising algorithm.
-%       2. transform - learned OCTOBOS.
-%       2. outputParam: Structure that contains the parameters of the
-%       algorithm output for analysis as follows
-%       -
-%                   - psnrXr: PSNR of Xr, if the oracle is provided
-%                   - IDX:    Label of each patch
-%                   - time:   run time of the denoising algorithm
+%       2. psnrXr - PSNR value of the denoised image
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
